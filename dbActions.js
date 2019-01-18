@@ -11,8 +11,8 @@ module.exports = {
         const query = db("actions").select().where("id",id).first();
         return query;
     },
-    insert:function(name){
-        const query =  db("actions").insert(name);
+    insert:function(data){
+        const query =  db("actions").insert(data);
         return query;
     },
     update:function(id,name){
